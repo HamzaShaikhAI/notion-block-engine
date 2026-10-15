@@ -1,3 +1,4 @@
+
 name: CI
 
 on:
@@ -10,6 +11,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         node-version: [18.x, 20.x, 22.x, 24.x]
 
@@ -20,9 +22,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build TypeScript
-        run: npx tsc
+        run: npm run build
 
       - name: Run Tests
         run: npm test

@@ -1,54 +1,53 @@
-{
-  "name": "notion-block-engine",
-  "version": "1.0.0",
-  "description": "Zero-dependency bidirectional Notion block AST, clipboard HTML sanitizer, and Markdown engine.",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "default": "./dist/index.mjs"
-    }
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md",
-    "LICENSE"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "test": "node --test tests/*.test.mjs",
-    "prepublishOnly": "npm run test && npm run build"
-  },
-  "keywords": [
-    "notion",
-    "notion-blocks",
-    "notion-api",
-    "clipboard",
-    "html-to-notion",
-    "markdown-to-notion",
-    "notion-to-markdown",
-    "rich-text",
-    "ast",
-    "parser",
-    "zero-dependency"
-  ],
-  "author": "Open Source Community",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/your-username/notion-block-engine.git"
-  },
-  "bugs": {
-    "url": "https://github.com/your-username/notion-block-engine/issues"
-  },
-  "homepage": "https://github.com/your-username/notion-block-engine#readme",
-  "engines": {
-    "node": ">=18.0.0"
-  }
+﻿{
+    "name":  "notion-block-engine",
+    "version":  "1.0.0",
+    "description":  "Zero-dependency bidirectional Notion block AST, clipboard HTML sanitizer, and Markdown engine.",
+    "main":  "./dist/index.js",
+    "module":  "./dist/index.js",
+    "types":  "./dist/index.d.ts",
+    "type":  "module",
+    "exports":  {
+                    ".":  {
+                              "types":  "./dist/index.d.ts",
+                              "import":  "./dist/index.js",
+                              "default":  "./dist/index.js"
+                          }
+                },
+    "files":  [
+                  "dist",
+                  "src",
+                  "README.md",
+                  "LICENSE"
+              ],
+    "scripts":  {
+                    "build":  "tsc",
+                    "test":  "node --test tests/*.test.mjs",
+                    "prepublishOnly":  "npm run test \u0026\u0026 npm run build"
+                },
+    "keywords":  [
+                     "notion",
+                     "notion-blocks",
+                     "notion-api",
+                     "clipboard",
+                     "html-to-notion",
+                     "markdown-to-notion",
+                     "notion-to-markdown",
+                     "rich-text",
+                     "ast",
+                     "parser",
+                     "zero-dependency"
+                 ],
+    "author":  "Open Source Community",
+    "license":  "MIT",
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/HamzaShaikhAI/notion-block-engine.git"
+                   },
+    "bugs":  {
+                 "url":  "https://github.com/HamzaShaikhAI/notion-block-engine/issues"
+             },
+    "homepage":  "https://github.com/HamzaShaikhAI/notion-block-engine#readme",
+    "engines":  {
+                    "node":  "\u003e=18.0.0"
+                }
 }

@@ -2,13 +2,25 @@
 
 # ⚡ Notion Block Engine
 
+**By [HamzaShaikhAI](https://hamzashaikhai.com/) — *Systems & Local-First AI Engineer***
+
 ### Zero-dependency bidirectional Notion Block AST, dirty clipboard HTML sanitizer, and Markdown engine.
 
-[![CI](https://img.shields.io/badge/CI-passing-brightgreen?style=flat-square)](https://github.com/your-username/notion-block-engine/actions)
+[![Star this repo if it saved you time](https://img.shields.io/github/stars/HamzaShaikhAI/notion-block-engine?style=for-the-badge&logo=github&label=%E2%AD%90%20Star%20This%20Repo%20If%20It%20Saved%20You%20Time&color=f59e0b)](https://github.com/HamzaShaikhAI/notion-block-engine/stargazers)
+[![CI](https://img.shields.io/badge/CI-passing-brightgreen?style=flat-square)](https://github.com/HamzaShaikhAI/notion-block-engine/actions)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success?style=flat-square)](package.json)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-blue?style=flat-square)](tsconfig.json)
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow.svg?style=flat-square)](LICENSE)
 [![Size](https://img.shields.io/badge/bundle%20size-%3C15%20KB-informational?style=flat-square)](dist/)
+
+<img src="assets/notion-block-engine-demo.gif" alt="Notion Block Engine AST Parser Architecture" width="760" />
+
+```bash
+# ⚡ 3-Command Quickstart
+npm install notion-block-engine
+git clone https://github.com/HamzaShaikhAI/notion-block-engine.git && cd notion-block-engine
+npm test
+```
 
 **Convert anything into clean Notion blocks. Paste like Notion desktop. Export clean GFM Markdown and semantic HTML.**
 
